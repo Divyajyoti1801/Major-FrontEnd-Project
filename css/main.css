@@ -9,4 +9,23 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: inherit;
+}
+
+body {
+  font-size: 1.6rem;
+  font-weight: 600;
+  font-family: "Overpass", sans-serif;
+  background-color: hsl(0deg, 0%, 100%);
+  width: 100%;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: repeat(5, min-content);
+}
+
+.header {
+  background-image: linear-gradient(to right, rgba(255, 143, 112, 0.95), rgba(255, 61, 84, 0.9)), url(../images/bg-pattern-intro-desktop.svg);
+  background-size: auto;
+  background-position: left;
+  background-repeat: none;
+  padding: 6.3rem 15.7rem;
 }/*# sourceMappingURL=main.css.map */

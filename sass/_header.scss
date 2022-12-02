@@ -1,0 +1,47 @@
+.header{
+    background-image: linear-gradient(to right,rgba($color-very-light-red-2,0.95),rgba($color-light-red-2,0.9)),url(../images/bg-pattern-intro-desktop.svg);
+    background-size:auto;
+    background-position: left;
+    background-repeat: none;
+    padding: 6.3rem 15.7rem;
+    
+    
+    &__navigation{
+        
+        &--brand{
+        }
+
+        &--main_navigation{
+            &--list{
+                li{
+                    a,a:link{
+                        
+
+                        &:visited,&:hover{
+
+                        }
+
+                    }
+                }
+            }
+            &--cta{
+                &--btn-1{
+                    
+                }
+                &--btn-2{
+
+                }
+            }
+        }
+    }
+    &__hero{
+        &--cta{
+            &--btn-1{
+                
+            }
+            &--btn-2{
+
+            }
+        }
+    }
+}
