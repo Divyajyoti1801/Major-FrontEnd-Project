@@ -4,43 +4,122 @@
     background-position: left;
     background-repeat: none;
     padding: 6.3rem 15.7rem;
+    height: auto;
     
     
     &__navigation{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: black;
+        width: 100%;
+        height: auto;
         
         &--brand{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: red;
+            height: 100%;
         }
 
         &--main_navigation{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 88%;
             &--list{
-                li{
+                display: flex;
+                align-items: center;
+                &--item{
+                    list-style: none;
+                    font-size:$font-reg;
                     a,a:link{
+                        color:$color-white;
                         
-
-                        &:visited,&:hover{
-
+                        span{
+                            padding-left: 0.7rem;
                         }
 
+                    }
+                    &:not(:last-child){
+                        padding-right: 3.1rem;
                     }
                 }
             }
             &--cta{
+                
                 &--btn-1{
-                    
+                    font-size:1.8rem;
+                    font-family:$font-family-Ubuntu;
+                    font-weight: 500;
+                    color:$color-white;
+                    background:none;
+                    border:none;
+                    cursor: pointer;
+                    padding-right:3.1rem;
                 }
                 &--btn-2{
+                    font-size:1.8rem;
+                    font-family:$font-family-Ubuntu;
+                    font-weight: 700;
+                    color:$color-light-red-2;
+                    background:$color-white;
+                    border:none;
+                    border-radius:$border-radius-cta;
+                    padding: 1.6rem 3.6rem;
+                    cursor: pointer;
 
+                    &:hover{
+                        color:$color-white;
+                        background-color: rgba($color-white,0.4);
+                    }
                 }
             }
         }
     }
     &__hero{
+        background-color: teal;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 15rem;
+        &--heading{
+            font-size: 4.6rem;
+            font-family: $font-family-Overpass;
+            color:$color-white;
+        }
+        &--content{
+            padding-top: 2.4rem;
+            font-size: $font-reg;
+            font-family: $font-family-Overpass;
+            color:$color-white;
+        }
         &--cta{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-top:4.8rem;
             &--btn-1{
-                
+                font-family: $font-family-Ubuntu;
+                font-weight: 700;
+                font-size: $font-reg;
+                background-color: $color-white;
+                color:$color-light-red-2;
+                border: none;
+                border-radius: $border-radius-cta;
+                padding: 1.7rem;
+                margin-right: 1.6rem;
             }
             &--btn-2{
-
+                font-family: $font-family-Ubuntu;
+                background: none;
+                border:2px solid $color-white;
+                font-size:$font-reg;
+                font-weight: 700;
+                padding: 1.7rem;
+                color: $color-white;
+                border-radius: $border-radius-cta;
             }
         }
     }

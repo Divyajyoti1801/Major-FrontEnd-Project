@@ -28,4 +28,113 @@ body {
   background-position: left;
   background-repeat: none;
   padding: 6.3rem 15.7rem;
+  height: auto;
+}
+.header__navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: black;
+  width: 100%;
+  height: auto;
+}
+.header__navigation--brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: red;
+  height: 100%;
+}
+.header__navigation--main_navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 88%;
+}
+.header__navigation--main_navigation--list {
+  display: flex;
+  align-items: center;
+}
+.header__navigation--main_navigation--list--item {
+  list-style: none;
+  font-size: 1.6rem;
+}
+.header__navigation--main_navigation--list--item a, .header__navigation--main_navigation--list--item a:link {
+  color: hsl(0deg, 0%, 100%);
+}
+.header__navigation--main_navigation--list--item a span, .header__navigation--main_navigation--list--item a:link span {
+  padding-left: 0.7rem;
+}
+.header__navigation--main_navigation--list--item:not(:last-child) {
+  padding-right: 3.1rem;
+}
+.header__navigation--main_navigation--cta--btn-1 {
+  font-size: 1.8rem;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  color: hsl(0deg, 0%, 100%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding-right: 3.1rem;
+}
+.header__navigation--main_navigation--cta--btn-2 {
+  font-size: 1.8rem;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  color: hsl(353deg, 100%, 62%);
+  background: hsl(0deg, 0%, 100%);
+  border: none;
+  border-radius: 50px;
+  padding: 1.6rem 3.6rem;
+  cursor: pointer;
+}
+.header__navigation--main_navigation--cta--btn-2:hover {
+  color: hsl(0deg, 0%, 100%);
+  background-color: rgba(255, 255, 255, 0.4);
+}
+.header__hero {
+  background-color: teal;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 15rem;
+}
+.header__hero--heading {
+  font-size: 4.6rem;
+  font-family: "Overpass", sans-serif;
+  color: hsl(0deg, 0%, 100%);
+}
+.header__hero--content {
+  padding-top: 2.4rem;
+  font-size: 1.6rem;
+  font-family: "Overpass", sans-serif;
+  color: hsl(0deg, 0%, 100%);
+}
+.header__hero--cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 4.8rem;
+}
+.header__hero--cta--btn-1 {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-size: 1.6rem;
+  background-color: hsl(0deg, 0%, 100%);
+  color: hsl(353deg, 100%, 62%);
+  border: none;
+  border-radius: 50px;
+  padding: 1.7rem;
+  margin-right: 1.6rem;
+}
+.header__hero--cta--btn-2 {
+  font-family: "Ubuntu", sans-serif;
+  background: none;
+  border: 2px solid hsl(0deg, 0%, 100%);
+  font-size: 1.6rem;
+  font-weight: 700;
+  padding: 1.7rem;
+  color: hsl(0deg, 0%, 100%);
+  border-radius: 50px;
 }/*# sourceMappingURL=main.css.map */
