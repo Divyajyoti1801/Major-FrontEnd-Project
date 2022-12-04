@@ -1,31 +1,58 @@
 .footer{
-    &__header{
-        &--img{
-
-        }
-    }
-    
+    background-color: $color-very-dark-black-blue;
+    padding: 6.2rem 16rem;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-row: 100%;
+    // &__header{
+       
+    // }
     &__product{
+        
         &--heading{
-
+            font-family: $font-family-Overpass;
+            color: $color-white;
+            font-weight: $font-weight-xl;
+            font-size: $font-reg;
         }
         &--list{
+            margin-top: 4rem;
             li{
+                list-style: none;
                 a{
-
+                    text-decoration: none;
+                    color: $color-white;
+                    font-weight: $font-weight-md;
+                    font-size: $font-reg;
+                }
+                
+                &:not(:last-child){
+                    margin-bottom: 2rem;
                 }
             }
         }
     }
     
     &__company{
+       
         &--heading{
-
+            font-family: $font-family-Overpass;
+            color: $color-white;
+            font-weight: $font-weight-xl;
+            font-size: $font-reg;
         }
         &--list{
+            margin-top: 4rem;
             li{
+                list-style: none;
                 a{
-
+                    text-decoration: none;
+                    color: $color-white;
+                    font-weight: $font-weight-md;
+                    font-size: $font-reg;
+                }
+                &:not(:last-child){
+                    margin-bottom: 2rem;
                 }
             }
         }
@@ -33,12 +60,23 @@
     
     &__connect{
         &--heading{
-
+            font-family: $font-family-Overpass;
+            color: $color-white;
+            font-weight: $font-weight-xl;
+            font-size: $font-reg;
         }
         &--list{
+            margin-top: 4rem;
             li{
+                list-style: none;
                 a{
-
+                    text-decoration: none;
+                    color: $color-white;
+                    font-weight: $font-weight-md;
+                    font-size: $font-reg;
+                }
+                &:not(:last-child){
+                    margin-bottom: 2rem;
                 }
             }
         }

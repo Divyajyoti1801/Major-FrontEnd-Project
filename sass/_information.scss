@@ -1,0 +1,50 @@
+.information{
+    display: flex;
+    background-color:$color-white;
+    z-index: 3;
+    padding: 11rem 17.5rem 12rem 0;
+    &__image{
+        display: inline-block;
+        width: 60%;
+        transform: translateX(-29%);
+    }
+    
+    &__content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        &-1{
+            &--heading{
+                font-size: 3rem;
+                font-family: $font-family-Overpass;
+                font-weight: $font-weight-xl;
+                color:$color-very-dark-blue;
+            }
+            &--content{
+                margin-top: 3.2rem;
+                font-size: $font-reg; 
+                font-family: $font-family-Overpass;  
+                font-weight: $font-weight-md;
+                color:$color-very-dark-gray-blue;
+                line-height: 2.4rem;
+            }
+        }
+        &-2{
+            margin-top: 8.4rem;
+            &--heading{
+                font-size: 3rem;
+                font-family: $font-family-Overpass;
+                font-weight: $font-weight-xl;
+                color:$color-very-dark-blue;
+            }
+            &--content{
+                margin-top: 3.2rem;
+                font-size: $font-reg; 
+                font-family: $font-family-Overpass;  
+                font-weight: $font-weight-md;
+                color:$color-very-dark-gray-blue;
+                line-height: 2.4rem;
+            }
+        }
+    }
+}
