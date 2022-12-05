@@ -1,33 +1,67 @@
 .Introduction{
     z-index: 3;
     background-color: $color-white;
+    display: grid;
+    grid-template-columns: 46% min-content;
+    grid-template-rows: min-content;
+    margin-top: 15.4rem;
+    overflow-x: hidden;
     &__header{
+        grid-column: 1/3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
         &--heading{
-
+            font-size: 4.2rem;
+            color:$color-very-dark-blue;
+            font-weight: $font-weight-xl;
+            padding-right: 10rem;
         }
     }
-    
-    &__content-1{
-        &--heading{
 
+    &__content{
+        grid-column: 1/2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 15.9rem;
+        &-1{
+            &--heading{
+                color:$color-very-dark-blue;
+                font-size: 3rem;
+                font-weight: $font-weight-xl;
+            }
+            
+            &--content{
+                margin-top: 3rem;
+                font-size: $font-reg;
+                line-height: 2rem;
+                font-weight: 400;
+                color:$color-very-dark-gray-blue;
+            }
         }
-        &--content{
-
+        &-2{
+            margin-top: 8.2rem;
+            &--heading{
+                color:$color-very-dark-blue;
+                font-size:3rem;
+                font-weight: $font-weight-xl;
+            }
+            
+            &--content{
+                margin-top: 3rem;
+                font-size: $font-reg;
+                line-height: 2rem;
+                font-weight: 400;
+                color:$color-very-dark-gray-blue;
+            }
         }
     }
     &__image{
-        &--img{
-            
-        }
+        transform: translate(14%,-5%);
     }
-    &__content-2{
-        &--heading{
-
-        }
-        &--content{
-
-        }
-    }
+    
     
     
 }

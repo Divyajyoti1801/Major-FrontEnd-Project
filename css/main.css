@@ -140,7 +140,62 @@ body {
 .Introduction {
   z-index: 3;
   background-color: hsl(0deg, 0%, 100%);
+  display: grid;
+  grid-template-columns: 46% min-content;
+  grid-template-rows: min-content;
+  margin-top: 15.4rem;
+  overflow-x: hidden;
 }
+.Introduction__header {
+  grid-column: 1/3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Introduction__header--heading {
+  font-size: 4.2rem;
+  color: hsl(208deg, 49%, 24%);
+  font-weight: 600;
+  padding-right: 10rem;
+}
+.Introduction__content {
+  grid-column: 1/2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 15.9rem;
+}
+.Introduction__content-1--heading {
+  color: hsl(208deg, 49%, 24%);
+  font-size: 3rem;
+  font-weight: 600;
+}
+.Introduction__content-1--content {
+  margin-top: 3rem;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  font-weight: 400;
+  color: hsl(237deg, 17%, 21%);
+}
+.Introduction__content-2 {
+  margin-top: 8.2rem;
+}
+.Introduction__content-2--heading {
+  color: hsl(208deg, 49%, 24%);
+  font-size: 3rem;
+  font-weight: 600;
+}
+.Introduction__content-2--content {
+  margin-top: 3rem;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  font-weight: 400;
+  color: hsl(237deg, 17%, 21%);
+}
+.Introduction__image {
+  transform: translate(14%, -5%);
+}
+
 .mobile {
   background-image: linear-gradient(to right, #2c2d3f, rgba(63, 65, 100, 0.9));
   display: grid;
