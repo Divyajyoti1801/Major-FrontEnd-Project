@@ -1,17 +1,23 @@
 .mobile{
     background-image:linear-gradient(to right,rgba($color-very-dark-gray-blue,1),rgba($color-dark-desaturated-blue,0.9));
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: 55.6rem 55rem;
     grid-template-rows: 100%;
-    padding: 12rem 17.8rem 10.8rem 9rem;
+    padding-left: 17.6rem;
+    padding-right: 17.6rem;
+    padding-top: 10.6rem;
+    padding-bottom: 10.6rem;
+    justify-content: center;
     position: relative;
+    border-bottom-left-radius: 100px;
+    border-top-right-radius: 100px;
     
     &__bg-img{
         position: absolute;
-        top:-100%;
-        left: -13.5%;
-        width: 65%;
-        z-index: 1;
+        top:-114%;
+        left: -14%;
+        width: 67%;
+        z-index: 1;  
     }
 
     
@@ -19,11 +25,12 @@
         position: relative;
         &--img{
             position: absolute;
-            transform: translateY(-32%);
+            transform: translate(-6%,-30%);
         }
-        z-index: 4;
+        z-index: 4; 
     }
     &__content{
+       
         &--heading{
             font-size: 3.8rem;
             color: $color-white;
@@ -31,8 +38,8 @@
             font-family: $font-family-Overpass;
         }
         &--content{
-            margin-top: 3.6rem;
-            font-size: 1.7rem;
+            margin-top: 2.8rem;
+            font-size: $font-reg;
             line-height: 1.8;
             word-spacing: 0.3rem;
             font-weight: $font-weight-md;

@@ -1,12 +1,20 @@
 .information{
-    display: flex;
-    background-color:$color-white;
+    display: grid;
+    grid-template-columns: 52rem 51rem;
+    grid-template-rows: 78.6rem;
+    background-color: $color-white;
+    padding-right: 17.6rem;
+    padding-left: 17.6rem;
+    padding-bottom: 12rem;
+    padding-top: 11.2rem;
+    justify-content: center;
     z-index: 3;
-    padding: 11rem 17.5rem 12rem 0;
     &__image{
-        display: inline-block;
-        width: 60%;
-        transform: translateX(-29%);
+        position: relative;
+       &--img{
+        position: absolute;
+        transform: translate(-50%);
+       }
     }
     
     &__content{
@@ -26,11 +34,11 @@
                 font-family: $font-family-Overpass;  
                 font-weight: $font-weight-md;
                 color:$color-very-dark-gray-blue;
-                line-height: 2.4rem;
+                line-height: 2.6rem;
             }
         }
         &-2{
-            margin-top: 8.4rem;
+            margin-top: 8.6rem;
             &--heading{
                 font-size: 3rem;
                 font-family: $font-family-Overpass;
@@ -43,7 +51,7 @@
                 font-family: $font-family-Overpass;  
                 font-weight: $font-weight-md;
                 color:$color-very-dark-gray-blue;
-                line-height: 2.4rem;
+                line-height: 2.6rem;
             }
         }
     }
