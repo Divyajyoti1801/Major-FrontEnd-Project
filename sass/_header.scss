@@ -6,6 +6,9 @@
     padding: 6.3rem 15.7rem 15.3rem  15.7rem;
     height: auto;
     border-bottom-left-radius: 100px;
+    @media only screen and (max-width:$std-mobile){
+       background-image: linear-gradient(to right,rgba($color-very-light-red-2,0.95),rgba($color-light-red-2,0.9)),url(../images/bg-pattern-intro-mobile.svg);
+    }
     
     
     &__navigation{
@@ -27,6 +30,9 @@
             justify-content: space-between;
             align-items: center;
             width: 86%;
+            @media only screen and (max-width:64em){
+                width: 80%;
+            }
             &--list{
                 display: flex;
                 align-items: center;
@@ -76,6 +82,19 @@
                 }
             }
         }
+        &--mobile_navigation{
+            display: flex;
+            &--cta-open{
+                display: flex;
+                justify-content: center;
+                align-items: centre;
+            }
+            &--cta-close{
+                display: flex;
+                justify-content: center;
+                align-items: centre;
+            }
+        }
     }
     &__hero{
         display: flex;
@@ -115,6 +134,12 @@
                 border-radius: $border-radius-cta;
                 padding: 1.4rem 1.6rem;
                 margin-right: 1.6rem;
+                cursor: pointer;
+
+                &:hover{
+                    color:$color-white;
+                    background-color: rgba($color-white,0.4);
+                }
             }
             &--btn-2{
                 font-family: $font-family-Ubuntu;
@@ -125,7 +150,17 @@
                 padding: 1.4rem 1.6rem;
                 color: $color-white;
                 border-radius: $border-radius-cta;
+                cursor:pointer;
+                &:hover{
+                    background-color:$color-white;
+                    color:$color-light-red-2;
+                }
             }
         }
     }
+    
+}
+
+.hidden{
+    display: none;
 }

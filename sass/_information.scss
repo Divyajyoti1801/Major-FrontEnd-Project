@@ -13,7 +13,14 @@
         position: relative;
        &--img{
         position: absolute;
-        transform: translate(-50%);
+        transform: translate(-50%,10%);
+        @media only screen and (max-width:64em){
+                width: 150%;
+                transform: translate(-45%,10%);
+        }
+        @media only screen and (max-width:$std-mobile){
+                src: url('../images/illustration-laptop-mobile.svg');
+        }
        }
     }
     

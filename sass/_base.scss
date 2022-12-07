@@ -47,6 +47,13 @@ $std-desktop: 90em;
 html{
     box-sizing: border-box;
     font-size: 62.5%;
+    width: 100vw;
+    @media only screen and (max-width:64em){
+        font-size: 50%;
+    }
+    @media only screen and (max-width:$std-mobile){
+        font-size: 40%;
+    }
 }
 
 *,*::after,*::before{

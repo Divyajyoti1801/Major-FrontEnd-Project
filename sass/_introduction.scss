@@ -68,6 +68,13 @@
             position:absolute;
             width: 200%;
             transform: translate(-2%,-10%);
+            @media only screen and (max-width:64em){
+                width: 150%;
+                 transform: translate(10%,2%);
+            }
+            @media only screen and (max-width:$std-mobile){
+                src: url('../images/illustration-editor-mobile.svg');
+            }
         }
     }
     
