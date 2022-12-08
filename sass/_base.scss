@@ -51,9 +51,6 @@ html{
     @media only screen and (max-width:64em){
         font-size: 50%;
     }
-    @media only screen and (max-width:$std-mobile){
-        font-size: 40%;
-    }
 }
 
 *,*::after,*::before{
