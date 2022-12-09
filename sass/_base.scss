@@ -51,6 +51,7 @@ html{
     @media only screen and (max-width:64em){
         font-size: 50%;
     }
+    overflow-x: hidden;
 }
 
 *,*::after,*::before{
@@ -68,4 +69,5 @@ body{
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows:repeat(5,min-content);
+    z-index: 5;
 }

@@ -4,6 +4,7 @@ html {
   box-sizing: border-box;
   font-size: 62.5%;
   width: 100vw;
+  overflow-x: hidden;
 }
 @media only screen and (max-width: 64em) {
   html {
@@ -26,6 +27,7 @@ body {
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: repeat(5, min-content);
+  z-index: 5;
 }
 
 .header {
@@ -44,6 +46,7 @@ body {
     padding: 4.8rem 2rem 13.5rem 2rem;
     background-size: 300%;
     background-position: 38% 38%;
+    width: 100%;
   }
 }
 .header__navigation {
@@ -223,6 +226,7 @@ body {
     column-gap: 0;
     row-gap: 4.2rem;
     align-items: center;
+    z-index: 6;
   }
 }
 .Introduction__header {
@@ -356,27 +360,54 @@ body {
 @media only screen and (max-width: 23.4375em) {
   .mobile {
     grid-template-columns: 100%;
-    grid-template-rows: min-content 1fr;
+    padding: 2rem 2rem 10.4rem 2rem;
+    grid-template-rows: 19.7rem 35.9rem;
+    row-gap: 4.2rem;
+    align-items: center;
+    z-index: 2;
   }
-}
-.mobile__bg-img {
-  position: absolute;
-  top: -114%;
-  left: -14%;
-  width: 67%;
-  z-index: 1;
 }
 .mobile__image {
   position: relative;
-  z-index: 4;
 }
 .mobile__image--img {
   position: absolute;
   transform: translate(-6%, -30%);
+  z-index: 4;
 }
 @media only screen and (max-width: 64em) {
   .mobile__image--img {
     width: 100%;
+  }
+}
+@media only screen and (max-width: 23.4375em) {
+  .mobile__image--img {
+    transform: translate(0%, -80%);
+    z-index: 5;
+  }
+}
+.mobile__image--bg-img {
+  position: absolute;
+  width: 192%;
+  top: -340%;
+  left: -79%;
+}
+@media only screen and (max-width: 23.4375em) {
+  .mobile__image--bg-img {
+    position: absolute;
+    width: 190%;
+    transform: translate(20%, -50%);
+    z-index: 0;
+  }
+}
+@media only screen and (max-width: 23.4375em) {
+  .mobile__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0rem 2.4rem 0rem 2.4rem;
+    z-index: 2;
   }
 }
 .mobile__content--heading {
@@ -384,6 +415,11 @@ body {
   color: hsl(0deg, 0%, 100%);
   font-weight: 700;
   font-family: "Overpass", sans-serif;
+}
+@media only screen and (max-width: 23.4375em) {
+  .mobile__content--heading {
+    text-align: center;
+  }
 }
 .mobile__content--content {
   margin-top: 2.8rem;
@@ -394,12 +430,19 @@ body {
   font-family: "Overpass", sans-serif;
   color: hsl(0deg, 0%, 100%);
 }
+@media only screen and (max-width: 23.4375em) {
+  .mobile__content--content {
+    text-align: center;
+    width: 80%;
+  }
+}
 
 .information {
   display: grid;
   grid-template-columns: 52rem 51rem;
   grid-template-rows: 78.6rem;
   background-color: hsl(0deg, 0%, 100%);
+  padding: 11.2rem 17.6rem 12rem 17.6rem;
   padding-right: 17.6rem;
   padding-left: 17.6rem;
   padding-bottom: 12rem;
@@ -407,8 +450,25 @@ body {
   justify-content: center;
   z-index: 3;
 }
+@media only screen and (max-width: 23.4375em) {
+  .information {
+    padding-top: 6.2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    grid-template-columns: 100%;
+    grid-template-rows: 35.9rem min-content;
+    row-gap: 4.6rem;
+  }
+}
 .information__image {
   position: relative;
+}
+@media only screen and (max-width: 23.4375em) {
+  .information__image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 .information__image--img {
   position: absolute;
@@ -422,7 +482,10 @@ body {
 }
 @media only screen and (max-width: 23.4375em) {
   .information__image--img {
-    src: url("../images/illustration-laptop-mobile.svg");
+    content: url("../images/illustration-laptop-mobile.svg");
+    position: relative;
+    width: 150%;
+    transform: translate(0%, 0%);
   }
 }
 .information__content {
@@ -444,6 +507,12 @@ body {
   color: hsl(237deg, 17%, 21%);
   line-height: 2.6rem;
 }
+@media only screen and (max-width: 23.4375em) {
+  .information__content-1 {
+    text-align: center;
+    padding: 2.2rem;
+  }
+}
 .information__content-2 {
   margin-top: 8.6rem;
 }
@@ -461,6 +530,13 @@ body {
   color: hsl(237deg, 17%, 21%);
   line-height: 2.6rem;
 }
+@media only screen and (max-width: 23.4375em) {
+  .information__content-2 {
+    text-align: center;
+    padding: 2.2rem;
+    margin-top: 4.4rem;
+  }
+}
 
 .footer {
   background-color: hsl(240deg, 10%, 16%);
@@ -470,11 +546,23 @@ body {
   grid-row: 100%;
   border-top-right-radius: 100px;
 }
+@media only screen and (max-width: 23.4375em) {
+  .footer {
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(4, min-content);
+    row-gap: 6.4rem;
+  }
+}
 .footer__product--heading {
   font-family: "Overpass", sans-serif;
   color: hsl(0deg, 0%, 100%);
   font-weight: 600;
   font-size: 1.6rem;
+}
+@media only screen and (max-width: 23.4375em) {
+  .footer__product--heading {
+    text-align: center;
+  }
 }
 .footer__product--list {
   margin-top: 4rem;
@@ -491,11 +579,26 @@ body {
 .footer__product--list li:not(:last-child) {
   margin-bottom: 2rem;
 }
+@media only screen and (max-width: 23.4375em) {
+  .footer__product--list li:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+}
+@media only screen and (max-width: 23.4375em) {
+  .footer__product--list li {
+    text-align: center;
+  }
+}
 .footer__company--heading {
   font-family: "Overpass", sans-serif;
   color: hsl(0deg, 0%, 100%);
   font-weight: 600;
   font-size: 1.6rem;
+}
+@media only screen and (max-width: 23.4375em) {
+  .footer__company--heading {
+    text-align: center;
+  }
 }
 .footer__company--list {
   margin-top: 4rem;
@@ -512,11 +615,26 @@ body {
 .footer__company--list li:not(:last-child) {
   margin-bottom: 2rem;
 }
+@media only screen and (max-width: 23.4375em) {
+  .footer__company--list li:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+}
+@media only screen and (max-width: 23.4375em) {
+  .footer__company--list li {
+    text-align: center;
+  }
+}
 .footer__connect--heading {
   font-family: "Overpass", sans-serif;
   color: hsl(0deg, 0%, 100%);
   font-weight: 600;
   font-size: 1.6rem;
+}
+@media only screen and (max-width: 23.4375em) {
+  .footer__connect--heading {
+    text-align: center;
+  }
 }
 .footer__connect--list {
   margin-top: 4rem;
@@ -532,4 +650,14 @@ body {
 }
 .footer__connect--list li:not(:last-child) {
   margin-bottom: 2rem;
+}
+@media only screen and (max-width: 23.4375em) {
+  .footer__connect--list li:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+}
+@media only screen and (max-width: 23.4375em) {
+  .footer__connect--list li {
+    text-align: center;
+  }
 }/*# sourceMappingURL=main.css.map */

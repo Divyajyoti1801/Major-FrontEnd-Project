@@ -10,18 +10,13 @@
     border-top-right-radius: 100px;
     @media only screen and (max-width:$std-mobile){
         grid-template-columns: 100%;
-        grid-template-rows: min-content 1fr;
+        padding: 2rem 2rem 10.4rem 2rem;
+        grid-template-rows: 19.7rem 35.9rem;
+        row-gap: 4.2rem;
+        align-items: center;
+        z-index: 2;
     }
     
-    &__bg-img{
-        position: absolute;
-        top:-114%;
-        left: -14%;
-        width: 67%;
-        z-index: 1;
-        @media only screen and (max-width:$std-mobile){           
-        }  
-    }
 
     
     &__image{
@@ -32,18 +27,45 @@
             @media only screen and (max-width:64em){
                 width: 100%;
             }
-           
+            z-index: 4; 
+            @media only screen and (max-width:$std-mobile){
+              transform: translate(0%,-80%);
+              z-index: 5;
+            }
         }
+        &--bg-img{
+            position:absolute;
+            width: 192%;
+            top: -340%;
+            left: -79%;
+            @media only screen and (max-width:$std-mobile){
+                position: absolute;
+                width: 190%;
+                transform: translate(20%,-50%);
+                z-index: 0;
+            }
+        }
+
         
-        z-index: 4; 
+       
     }
     &__content{
-       
+        @media only screen and (max-width:$std-mobile){
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 0rem 2.4rem 0rem 2.4rem;
+            z-index: 2;      
+        }
         &--heading{
             font-size: 3.8rem;
             color: $color-white;
             font-weight: 700;
             font-family: $font-family-Overpass;
+            @media only screen and (max-width:$std-mobile){
+                text-align: center;
+            }
         }
         &--content{
             margin-top: 2.8rem;
@@ -53,6 +75,10 @@
             font-weight: $font-weight-md;
             font-family: $font-family-Overpass;
             color: $color-white;
+            @media only screen and (max-width:$std-mobile){
+                text-align: center;
+                width: 80%;
+            }
         }
     }
 }
