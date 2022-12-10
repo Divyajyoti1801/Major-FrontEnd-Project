@@ -1,6 +1,6 @@
 .Introduction{
     z-index: 3;
-    background-color: $color-white;
+    background-color:$color-white;
     display: grid;
     grid-template-columns: 50rem 52rem;
     grid-template-rows: min-content 88.2rem;
@@ -9,14 +9,15 @@
     justify-content: center;
     column-gap: 4rem;
     @media only screen and (max-width:$std-mobile){
-        padding: 9rem 2rem 23.6rem 2rem; 
+        padding: 9rem 2rem 0rem 2rem;
+        margin-bottom: 31.4rem; 
         width: 100vw;
         grid-template-columns: 100%;
         grid-template-rows: min-content min-content 1fr;
         column-gap: 0;
         row-gap: 4.2rem;
         align-items: center;
-        z-index: 6;
+        z-index: 3;
     }
     &__header{
         grid-column: 1/3;

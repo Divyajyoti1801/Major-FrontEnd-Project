@@ -6,15 +6,14 @@
     padding:10.6rem 17.6rem 10.6rem 17.6rem ;
     justify-content: center;
     position: relative;
-    border-bottom-left-radius: 100px;
-    border-top-right-radius: 100px;
+    border-bottom-left-radius: 90px;
+    border-top-right-radius: 80px;
     @media only screen and (max-width:$std-mobile){
         grid-template-columns: 100%;
         padding: 2rem 2rem 10.4rem 2rem;
         grid-template-rows: 19.7rem 35.9rem;
         row-gap: 4.2rem;
         align-items: center;
-        z-index: 2;
     }
     
 
@@ -27,10 +26,10 @@
             @media only screen and (max-width:64em){
                 width: 100%;
             }
-            z-index: 4; 
+            z-index: 5; 
             @media only screen and (max-width:$std-mobile){
               transform: translate(0%,-80%);
-              z-index: 5;
+              width: 100%;
             }
         }
         &--bg-img{
@@ -41,9 +40,9 @@
             @media only screen and (max-width:$std-mobile){
                 position: absolute;
                 width: 190%;
-                transform: translate(20%,-50%);
-                z-index: 0;
+                transform: translate(18%,-54%);
             }
+            z-index: -.5;
         }
 
         
